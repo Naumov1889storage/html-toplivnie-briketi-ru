@@ -1,0 +1,29 @@
+.icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon_phone {
+  background-image: url("../img/icon-phone.png");
+}
+.icon_email {
+  background-image: url("../img/icon-email.png");
+}
+.icon_placemark {
+  height: 28px;
+  background-image: url("../img/icon-placemark.png");
+}
+.icon_arrow {
+  background-image: url("../img/icon-arrow.png");
+}
+.icon_security {
+  background-image: url("../img/icon-security.png");
+}
+.icon_low-prices {
+  background-image: url("../img/icon-low-prices.png");
+}
+.icon_customer {
+  background-image: url("../img/icon-customer.png");
+}

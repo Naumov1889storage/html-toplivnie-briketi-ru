@@ -1,0 +1,126 @@
+@font-face {
+  font-family: ''
+  src: url('/fonts/.ttf')
+}
+
+html {
+  font-family: 'Roboto', sans-serif
+  color: #494346
+  scroll-behavior: smooth
+}
+
+a {
+  color: inherit;
+}
+
+.row {
+  display: flex
+  flex-direction: row
+}
+
+.column {
+  display: flex
+  flex-direction: column
+}
+
+.container {
+  margin: 0 auto
+  max-width: 1170px
+  width: 95%
+  height: 100%
+}
+
+
+.text {
+  &_color {
+    &_primary {
+      color: #3bc335
+    }
+  }
+}
+
+.pusher {
+  overflow: hidden
+  height: 100%
+  margin-left: 0
+  transition: .4s
+  width: 100%
+
+  &_active {
+    margin-left: -200px
+  }
+}
+
+.overlay {
+  position: fixed
+  z-index: 5
+  top: 0
+  right: 0
+  bottom: -500px // to avoid glitches on mob while scrolling
+  width: 100%
+  background: rgba(0, 0, 0, 0.35)
+  visibility: hidden
+  transition: .4s
+
+  &_active {
+    visibility: visible
+  }
+}
+
+.article {
+  &__title {
+    margin: 35px 0 8px 0
+    font-size: 24px
+    font-weight: 600
+    line-height: 35px
+    color: #494346
+  }
+
+  &__p {
+    margin-bottom: 20px
+    font-weight: 400
+    color: #494346
+    line-height: 24px
+  }
+}
+
+.article-section {
+  padding-bottom: 60px
+  border-bottom: 1px solid #e2e2e2
+  .title {
+    margin-top: 40px
+    margin-bottom: 20px
+  }
+}
+
+@media (max-width: 750px) {
+  .article {
+    &__title {
+      font-size: 20px
+    }
+    &__p {
+      font-size: 15px
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 92%
+  }
+
+  .article-section {
+    padding-bottom: 50px
+    .title {
+      font-size: 23px
+      margin-top: 35px
+      margin-bottom: 10px
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    width: 90%
+  }
+}

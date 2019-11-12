@@ -1,0 +1,107 @@
+.contact-section {
+  position: relative;
+}
+.contact-section__map {
+  width: 100%;
+  height: 660px;
+  background: #ffe4c4;
+}
+.contact-section__title.title {
+  text-align: left;
+}
+.contact-section__title.title .title__divider {
+  margin-left: 0;
+}
+.contact-section__contact-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 471px;
+  padding: 27px 40px 7px 40px;
+  box-shadow: 0 15px 27px rgba(0,0,0,0.06);
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+.contact-section__contact-box .contact {
+  margin: 30px 0;
+}
+.contact-section__contact-box .contact:last-child {
+  margin-top: 35px;
+}
+.contact-section__contact-box .contact__title {
+  font-size: 22px;
+}
+.contact-section__contact-box .contact__text {
+  margin-left: 17px;
+  font-size: 27px;
+}
+@media (max-width: 950px) {
+  .contact-section .contact {
+    margin: 20px 0;
+  }
+  .contact-section .contact:last-child {
+    margin-top: 25px;
+  }
+  .contact-section .contact__title {
+    font-size: 20px;
+  }
+  .contact-section .contact__text {
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .contact-section__contact-box {
+    max-width: 420px;
+    width: 92%;
+    padding: 22px 30px 7px 30px;
+  }
+}
+@media (max-width: 850px) {
+  .contact-section {
+    margin-top: 180px;
+  }
+  .contact-section__contact-box {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+  }
+  .contact-section__map {
+    height: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-section__map {
+    height: 400px;
+  }
+}
+@media (max-width: 450px) {
+  .contact-section {
+    margin-top: 150px;
+  }
+  .contact-section .contact {
+    margin: 12px 0;
+  }
+  .contact-section .contact:last-child {
+    margin-top: 17px;
+  }
+  .contact-section .contact .icon {
+    transform: scale(0.9);
+  }
+  .contact-section .contact__title {
+    font-size: 17px;
+  }
+  .contact-section .contact__text {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .contact-section__contact-box {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+  }
+  .contact-section__map {
+    height: 360px;
+  }
+}

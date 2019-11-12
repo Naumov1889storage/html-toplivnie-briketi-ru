@@ -1,0 +1,118 @@
+.footer {
+  padding: 28px 0 33px 0;
+}
+.footer__first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -15px 0;
+}
+.footer__logo.logo {
+  margin: 15px 15px 15px 0;
+  width: 470px;
+}
+.footer__logo.logo .logo__img {
+  width: 59px;
+  height: 77px;
+}
+.footer__logo.logo .logo__text {
+  margin-left: 27px;
+}
+.footer__logo.logo .logo__title {
+  font-size: 26px;
+}
+.footer__logo.logo .logo__subtitle {
+  font-size: 16px;
+}
+.footer__docs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__privacy,
+.footer__agreement {
+  margin: 7px 15px;
+  color: #515151;
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: underline;
+}
+.footer__privacy:hover,
+.footer__agreement:hover {
+  text-decoration: none;
+}
+.footer__author {
+  margin: 15px 0 15px 15px;
+  width: 135px;
+  text-align: right;
+}
+.footer__copyright {
+  margin-top: 40px;
+}
+.author {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.38px;
+  color: #141414;
+}
+.author__link {
+  color: #008ea9;
+  text-decoration: underline;
+}
+.author__link:hover {
+  text-decoration: none;
+}
+.copyright {
+  text-align: center;
+  color: #676767;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+@media (max-width: 950px) {
+  .footer__logo.logo {
+    width: 255px;
+  }
+  .footer__logo.logo .logo__text {
+    margin-left: 18px;
+  }
+  .footer__logo.logo .logo__title {
+    font-size: 20px;
+  }
+  .footer__logo.logo .logo__subtitle {
+    font-size: 12px;
+  }
+  .footer__logo.logo .text_color_primary {
+    display: block;
+  }
+  .footer__logo.logo .logo__dash {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .footer__first-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__docs {
+    margin: 5px 0 0 0;
+    align-items: flex-start;
+  }
+  .footer__privacy,
+  .footer__agreement {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  .footer__author {
+    margin-top: 7px;
+    margin-left: 0;
+    width: auto;
+    font-size: 14px;
+  }
+  .footer__copyright {
+    margin-top: 25px;
+    text-align: left;
+    font-size: 13px;
+  }
+}

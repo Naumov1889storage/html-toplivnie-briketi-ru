@@ -1,0 +1,42 @@
+block header
+    header.header
+        .container.header__container
+            if page == "«Интернет-магазин биотоплива нового поколения»"
+                .logo.header__logo
+                    img(class="logo__img" src="img/logo-main.png" title="Логотип Toplivnie-Briketi.ru")
+
+                    .logo__text
+                        .logo__title <span class="text_color_primary">Toplivnie</span><span class="logo__dash">-</span>Briketi.ru
+                        .logo__subtitle «Интернет-магазин биотоплива нового поколения»
+            else
+                a(class="logo header__logo" href="index.html")
+                    img(class="logo__img" src="img/logo-main.png" title="Логотип Toplivnie-Briketi.ru")
+
+                    .logo__text
+                        .logo__title <span class="text_color_primary">Toplivnie</span><span class="logo__dash">-</span>Briketi.ru
+                        .logo__subtitle «Интернет-магазин биотоплива нового поколения»
+            .contact-list.header__contact-list
+                .contact
+                    span.contact__title Москва
+                    a(class="contact__link" href="tel:+74993506304")
+                        i.icon.icon_phone
+                        span.contact__text + 7 (499) 350-63-04
+                .contact
+                    span.contact__title Санкт-Петербург
+                    a(class="contact__link" href="tel:+78123094397")
+                        i.icon.icon_phone
+                        span.contact__text + 7 (812) 309-43-97
+                .contact
+                    span.contact__title Киров
+                    a(class="contact__link" href="tel:+78332680261")
+                        i.icon.icon_phone
+                        span.contact__text + 7 (833) 268-02-61
+                .contact
+                    span.contact__title E-mail
+                    a(class="contact__link" href="mailto:Briket-info@mail.ru")
+                        i.icon.icon_email
+                        span.contact__text Briket-info@mail.ru
+
+            button.burger.header__burger
+                i
+

@@ -1,0 +1,19 @@
+.contact__title {
+  display: block;
+  margin-bottom: 5px;
+  color: #252525;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.74px;
+}
+.contact__link {
+  display: flex;
+  align-items: center;
+}
+.contact__text {
+  margin-left: 10px;
+  color: #494346;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.74px;
+}

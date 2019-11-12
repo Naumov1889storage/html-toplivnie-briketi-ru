@@ -1,0 +1,34 @@
+doctype html
+html(lang="ru-Ru")
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        block title
+            -let title = "Toplivnie-Briketi.ru"
+            -let page = ''
+        title #{title + (page.length ? " - " : "") + (typeof page === 'string' ? page : page[page.length - 1])}
+
+        link(rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32")
+        link(rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16")
+
+
+        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900&display=swap&subset=cyrillic" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css")
+        link(rel="stylesheet" href="css/concat-css-libs.css")
+        link(rel="stylesheet" href="css/concat-css.css")
+    body
+        .pusher
+            include header
+            include nav-section
+
+            block content
+
+
+            include footer
+
+        .overlay
+
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js")
+        script(src="https://api-maps.yandex.ru/2.1/?apikey=c599d252-3a6f-4b64-872c-a529f6263f40&lang=ru_RU")
+        script(src="js/common.js")

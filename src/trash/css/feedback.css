@@ -1,0 +1,45 @@
+.feedback-section {
+  padding: 105px 0;
+}
+.feedback {
+  margin: 0 auto;
+  padding: 0 4% 1.4% 4%;
+  box-shadow: 0 23px 29px rgba(0,0,0,0.05);
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+.feedback__name {
+  margin-top: 2.8%;
+  margin-bottom: 6px;
+  color: #3a3535;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.41px;
+}
+.feedback__city {
+  margin-bottom: 3%;
+  color: #565656;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.29px;
+}
+.feedback__p {
+  margin-bottom: 3.2%;
+  color: #646464;
+  font-size: 19px;
+  font-style: italic;
+  line-height: 25px;
+  letter-spacing: 0.47px;
+}
+@media (max-width: 1050px) {
+  .feedback-section {
+    padding: 65px 0;
+  }
+}
+@media (max-width: 750px) {
+  .feedback-section {
+    padding: 55px 0;
+  }
+}

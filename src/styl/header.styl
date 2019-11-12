@@ -1,0 +1,156 @@
+.header {
+  height: 155px
+  border-bottom: 1px solid #e2e2e2
+  
+  &__container {
+    display: flex
+    justify-content: space-between
+    align-items: center
+  }
+
+
+  &__contact-list {
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: -10px
+    margin-left: 30px
+    width: 47.5%
+    min-width: 500px
+
+    .contact {
+      margin-bottom: 10px
+      width: 240px
+
+      .icon {
+        background-position: left center
+      }
+    }
+  }
+  
+  &__burger {
+    display: none
+    i, i::before, i::after {
+      background-color: #494346
+    }
+  }
+
+}
+
+@media (max-width: 1050px) {
+  .header {
+    height: 140px
+    &__logo.logo {
+      width: 390px
+      .logo__img {
+        width: 60px
+        height: 80px
+      }
+      .logo__text {
+        margin-left: 15px
+      }
+      .logo__title {
+        font-size: 25px
+      }
+      .logo__subtitle {
+        font-size: 13px
+      }
+    }
+
+    &__contact-list {
+      min-width: 420px
+      .contact {
+        width: 200px
+      }
+      .contact__title {
+        margin-bottom: 0
+        font-size: 15px
+      }
+      .contact__text {
+        margin-left: 5px
+        font-size: 18px
+        font-weight: 500
+      }
+
+      .icon {
+        width: 18px
+        height: 18px
+        background-size: 85%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .header {
+    &__logo.logo {
+      width: 300px
+      .logo__img {
+        width: 48px
+        height: 68px
+      }
+      .logo__text {
+        margin-left: 10px
+      }
+      .logo__title {
+        font-size: 18px
+      }
+      .logo__subtitle {
+        font-size: 12px
+      }
+      .text_color_primary {
+        display: block
+      }
+      .logo__dash {
+        display: none
+      }
+    }
+
+  }
+}
+  
+
+@media (max-width: 750px) {
+  .header {
+    &__logo.logo {
+      min-width: max-content
+      width: max-content
+      .logo__text {
+        display: none
+      }
+    }
+
+    &__contact-list {
+      margin-left: 10px
+      margin-right: 10px
+      min-width: 410px
+    }
+    
+    &__burger {
+      display: block
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 130px
+    &__contact-list {
+      flex-direction: column
+      margin-bottom: -5px
+      min-width: auto
+      width: max-content
+      .contact {
+        margin-bottom: 5px
+        width: max-content
+      }
+      .contact__title {
+        display: none
+      }
+      .contact__text {
+        font-size: 15px
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.table-wrap {
+  box-shadow: 0 23px 29px rgba(0, 0, 0, 0.05)
+  border-radius: 5px
+}
+
+.table {
+  margin: 0 auto
+  min-width: 430px;
+  width: 100%
+  border-spacing: 0
+  border-collapse: collapse
+  border-radius: 5px
+
+  tbody {
+    border-radius: 5px
+  }
+
+  tr {
+    height: 71px
+    background-color: #ffffff
+    &:first-child {
+      border-radius: 5px 5px 0 0
+      height: 80px
+    }
+    &:last-child {
+      border-radius: 0 0 5px 5px
+      td:first-child {
+        border-radius: 0 0 0 5px
+      }
+      td:last-child {
+        border-radius: 0 0 5px 0
+      }
+    }
+    &:nth-child(odd) {
+      background-color: #f3f3f3
+    }
+  }
+
+  th {
+    background-color: #42c437
+    padding: 10px
+
+    color: #ffffff
+    font-size: 23px
+    font-weight: 500
+    &:first-child {
+      border-radius: 5px 0 0 0
+    }
+    &:last-child {
+      border-radius: 0 5px 0 0
+    }
+  }
+
+  td {
+    padding: 10px
+    text-align: center
+
+    font-size: 21px
+    font-weight: 400
+    color: #3a3a3a
+
+    &.price {
+      font-size: 26px
+      font-weight: 500
+      color: #47c53b
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .table {
+    tr {
+      height: 65px
+      &:first-child {
+        height: 74px
+      }
+    }
+    th {
+      font-size: 20px
+    }
+    td {
+      font-size: 18px
+      &.price {
+        font-size: 22px
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .table {
+    overflow: auto
+
+    tr {
+      height: 60px
+      &:first-child {
+        height: 69px
+      }
+    }
+    th {
+      font-size: 18px
+    }
+    td {
+      font-size: 16px
+      &.price {
+        font-size: 20px
+      }
+    }
+  }
+  .table-wrap {
+    overflow: auto
+  }
+}
+
+@media (max-width: 500px) {
+  .table {
+    th {
+      font-size: 16px
+    }
+    td {
+      font-size: 14px
+      &.price {
+        font-size: 18px
+      }
+    }
+  }
+}

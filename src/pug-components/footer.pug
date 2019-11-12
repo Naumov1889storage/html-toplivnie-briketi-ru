@@ -1,0 +1,25 @@
+block footer
+    footer.footer
+        .container
+            .footer__first-row
+                if page == "«Интернет-магазин биотоплива нового поколения»"
+                    .logo.footer__logo
+                        img(class="logo__img" src="img/logo-main.png" title="Логотип Toplivnie-Briketi.ru")
+
+                        .logo__text
+                            .logo__title <span class="text_color_primary">Toplivnie</span><span class="logo__dash">-</span>Briketi.ru
+                            .logo__subtitle «Интернет-магазин биотоплива нового поколения»
+                else
+                    a(class="logo footer__logo" href="index.html")
+                        img(class="logo__img" src="img/logo-main.png" title="Логотип Toplivnie-Briketi.ru")
+
+                        .logo__text
+                            .logo__title <span class="text_color_primary">Toplivnie</span><span class="logo__dash">-</span>Briketi.ru
+                            .logo__subtitle «Интернет-магазин биотоплива нового поколения»
+                .footer__docs
+                    a(class="footer__privacy" href="privacy.html") Политика конфиденциальности
+                    a(class="footer__agreement" href="terms.html") Пользовательское соглашение
+                .footer__author.author Разработка сайта <a class="author__link" href="https://rfim.ru/">rfim.ru</a>
+
+            .footer__copyright.copyright 2019 Toplivnie-Briketi.ru ©<br>Все права защищены.
+

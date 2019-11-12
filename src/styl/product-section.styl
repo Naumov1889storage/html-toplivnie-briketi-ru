@@ -1,0 +1,155 @@
+.product-section {
+  margin-top: 57px
+  .title {
+    margin-bottom: 27px
+  }
+  .table-wrap {
+    margin-top: 52px
+  }
+}
+
+.pellety {
+  padding-bottom: 67px
+}
+
+.brikety {
+  padding-top: 42px
+  padding-bottom: 110px
+  background-color: #fafafa
+}
+
+.anchor-section {
+  margin-bottom: 85px
+}
+
+.anchor-list {
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+  .anchor {
+    width: 48.7%
+    &:first-child {
+      margin-right: 2.6%
+    }
+  }
+}
+
+
+.product-list {
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin: 0 -15px 0 -15px
+
+  &__item {
+    margin: 15px
+  }
+}
+
+@media (max-width: 1000px) {
+  .product-list {
+    &__item.product {
+      width: 46%
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .anchor-list {
+    .anchor {
+      &__title {
+        font-size: 25px
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .product-list {
+    margin: 0 0 0 0
+    &__item.product {
+      width: 100%
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .product-section {
+    margin-top: 45px
+    .title {
+      margin-bottom: 20px
+    }
+
+    .table-wrap {
+      margin-top: 45px
+    }
+  }
+  .anchor-section {
+    margin-bottom: 60px
+  }
+  .brikety {
+    padding-bottom: 80px
+  }
+}
+
+@media (max-width: 600px) {
+  .anchor-list {
+    .anchor {
+      width: 70%
+
+      &:first-child {
+        margin-bottom: 25px
+        margin-right: 0
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: 500px) {
+  .product-list {
+    .product {
+      padding-bottom: 25px
+    }
+    .product__anchor {
+      margin-top: 12px
+    }
+    .product__title {
+      margin-bottom: 12px
+      font-size: 20px
+    }
+
+    .product__price {
+      margin-bottom: 12px
+      font-size: 22px
+    }
+    .product__characteristic {
+      margin-bottom: 10px
+      font-size: 15px
+    }
+
+  }
+
+  .product-section {
+    margin-top: 40px
+    .title {
+      margin-bottom: 12px
+    }
+
+    .table-wrap {
+      margin-top: 35px
+    }
+  }
+  .anchor-section {
+    margin-bottom: 50px
+  }
+  .pellety {
+    padding-bottom: 45px;
+  }
+  .brikety {
+    padding-top: 25px
+    padding-bottom: 60px
+  }
+}

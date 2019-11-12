@@ -1,0 +1,32 @@
+.btn {
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 205px  // TODO: change width and height
+  height: 65px
+  padding: 23px
+  border: 1px solid #6dcc4b
+  border-radius: 5px
+  background: transparent
+
+  font-size: 20px
+  font-weight: 500
+  line-height: 63.04px
+  letter-spacing: 0.34px
+  color: #3bc335
+
+  &:hover {
+    background-color: #3bc335
+    background-image: linear-gradient(to bottom, #6dcc4b 0%, #3bc335 100%)
+
+    color: #ffffff
+  }
+}
+
+@media (max-width: 900px) {
+  .btn {
+    width: 200px
+    height: 60px
+    font-size: 19px
+  }
+}
